@@ -1,0 +1,121 @@
+.media-nav{
+
+    @include atMedium{
+        display: none;
+    }
+
+    &__container{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        visibility: hidden;
+        opacity: 0;
+        background-color: rgba($color-sub, .15);
+        backdrop-filter: blur(3px);
+        transform: scale(0);
+        transition: all .3s cubic-bezier(.05,.60,.30,.05);
+        backface-visibility: hidden;
+
+        &--isVisible{
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    &__list{
+        border-radius: 1rem;
+        list-style: none;
+        position: absolute;
+        background-color: $color-sub;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        text-align: center;
+        padding: 5rem;
+        width: 72%;
+        z-index: 11;
+        box-shadow: -3px -5px 1.5rem rgba($color-bg, .1);
+    }
+
+
+    &__item{
+        &--c2a{
+            margin-top: 2.8rem;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 1.2rem;
+       }
+    }
+
+    &__link{
+        display: inline-block;
+        padding: 1rem 5rem;
+        text-decoration: none;
+        color: $color-light;
+        border-radius: 3rem;
+        
+        &:hover{
+            background-color: rgba($color-main, .15);
+        }
+
+        &--main{
+            color: $color-main;
+        }
+    }
+
+    &__clip-path{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        background-color: $color-main;
+        clip-path: ellipse(65% 11% at 50% 100%);
+    }
+
+    
+
+    
+    .media-menu{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: .7rem 1rem;
+        width: 100%;
+        z-index: 2;
+        
+
+        & > *:hover{
+            cursor: pointer;
+        }
+
+        &__icon{
+            fill: $color-sub;
+            height: 4.5rem;
+            width: 4.5rem;
+            padding: .8rem;
+            border-radius: 50%;
+
+            &:hover{
+                background-color: rgba($color-sub, .3);
+            }
+
+            &--active{
+                background-color: $color-sub;
+                fill: $color-main;
+                padding: 1rem;
+
+                &:hover{
+                    background-color: $color-sub;
+                }
+            }
+        }
+    }
+}

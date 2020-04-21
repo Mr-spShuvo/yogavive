@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+html{
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+}
+
+body{
+
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: $font-regular;
+}

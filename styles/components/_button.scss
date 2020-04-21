@@ -1,0 +1,52 @@
+.button{
+    color: $color-light;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: $font-bold;
+    letter-spacing: 1px;
+    padding: 1.1rem 3.8rem;
+    border-radius: 3.8rem;
+    box-shadow: -5px 3px 1.5rem rgba($color-sub, .3);
+    transition: all .3s;
+    cursor: pointer;
+    backface-visibility: hidden;
+
+    
+    
+    &--main{
+        color: $color-sub;
+        background-color: $color-main;
+
+        & > svg{
+            fill: $color-sub;
+        }
+    }
+
+    &--sub{
+        color: $color-main;
+        background-color: $color-sub;
+
+        & > svg{
+            fill: $color-main;
+        }
+    }
+
+    &:hover{
+        transform: translateY(-3px);
+    }
+
+    &:active{
+        transform: translateY(0);
+        box-shadow: -3px 1px 1rem rgba($color-sub, .3);
+    }
+
+    &>svg{
+        height: 2rem;
+        width: 2rem;
+        display: inline-block;
+        margin-right: .5rem;
+        padding-top: .5rem;
+    }
+}
