@@ -1,6 +1,11 @@
+.header{
+    height: 100vh;
+}
 .header-nav{
     &__logo {
-
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
         padding-top: 5rem;
         text-align: center;
 
