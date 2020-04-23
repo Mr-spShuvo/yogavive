@@ -6,8 +6,16 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 57.5%;
     text-rendering: optimizeLegibility;
+
+    @include media-queries(atMedium) {
+        font-size: 60%;
+    }
+
+    @include media-queries(atLarge) {
+        font-size: 62.5%;
+    }
 }
 
 body{

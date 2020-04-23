@@ -6,14 +6,12 @@
     font-size: 1.4rem;
     font-weight: $font-bold;
     letter-spacing: 1px;
-    padding: 1.1rem 3.8rem;
+    padding: 1.4rem 4.2rem;
     border-radius: 3.8rem;
     box-shadow: -3px 3px 1rem 1px rgba($color-sub, .15);
     transition: all .3s;
     cursor: pointer;
     backface-visibility: hidden;
-
-    
     
     &--main{
         color: $color-sub;

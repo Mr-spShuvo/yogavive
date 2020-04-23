@@ -1,17 +1,31 @@
-@mixin atLarge {
-    @media screen and (min-width: 1200px) {
-        @content;
-    }
+@mixin absCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-@mixin atMedium {
-    @media screen and (min-width: 920px) {
-        @content;
-    }
-}
-
-@mixin atSmall {
-    @media screen and (min-width: 480px) {
-        @content;
+//
+/* Media Queries (Mobile-first Approach)
+0-400px: Default
+(min-width: 480px) - atSmall
+(min-width: 600px) - atMedium
+(min-width: 900px) - atMediumLarge
+(min-width: 1200px) - atLarge
+(min-width: 1920px) - atLarger
+*/
+@mixin media-queries($breakpoints) {
+    @if $breakpoints == atSmall{
+        @media screen and (min-width:480px) {@content;}
+    } @else if $breakpoints == atMedium {
+        @media screen and (min-width:600px) {@content;}
+    } @else if $breakpoints == atMediumLarge {
+        @media screen and (min-width:900px) {@content;}
+    } @else if $breakpoints == atLarge {
+        @media screen and (min-width:1200px) {@content;}
+    } @else if $breakpoints == atLarger{
+        @media screen and (min-width:1920px) {@content;}
+    } @else {
+        @media screen and (min-width:$breakpoints) {@content;}
     }
 }

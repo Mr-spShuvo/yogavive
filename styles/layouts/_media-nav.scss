@@ -1,6 +1,6 @@
 .media-nav{
 
-    @include atMedium{
+    @include media-queries(atMediumLarge){
         display: none;
     }
 
