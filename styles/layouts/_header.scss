@@ -1,18 +1,113 @@
-.header{
+.header {
     height: 100vh;
-}
-.header-nav{
-    &__logo {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        padding-top: 5rem;
-        text-align: center;
 
-        img{
-            height: 4.5rem;
+    .header-nav {
+        &__logo {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            padding-top: 5rem;
+
+            img {
+                height: 4.5rem;
+            }
+
+            @include atMedium {
+                padding-top: 3.2rem;
+                left: 7.5%;
+                transform: translate(0%);
+
+                img {
+                    height: 3.6rem;
+                }
+            }
+
+            @include atLarge {
+                padding-top: 3rem;
+
+                img {
+                    height: 4rem;
+                }
+            }
         }
-        
-        
+
+        &--scrolled {
+            background-color: $color-bg;
+            position: fixed;
+            z-index: 1111;
+            width: 100%;
+            box-shadow: 0 .2rem 1rem rgba($color-main, .1);
+
+            .header-nav__logo {
+                @include atMedium {
+                    padding-top: 2.8rem;
+                }
+
+                @include atLarge {
+                    padding-top: 2.5rem;
+                }
+            }
+
+            .desktop-nav {
+                padding: 2rem 0;
+
+                &__link {
+                    color: $color-dark;
+
+                    &:hover {
+                        color: $color-main;
+                    }
+                }
+
+                &__item--c2a a {
+                    background-color: $color-main;
+                    color: $color-sub;
+
+                    &>svg {
+                        fill: $color-sub;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .desktop-nav {
+        text-align: right;
+        padding: 2.5rem 0;
+        display: none;
+
+        @include atMedium {
+            display: block;
+        }
+
+        &__list {
+            list-style: none;
+        }
+
+        &__item {
+            display: inline-block;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            @include atLarge {
+                &:not(:last-child) {
+                    margin-right: 3.5rem;
+                }
+            }
+        }
+
+        &__link {
+            color: $color-gray;
+            text-decoration: none;
+            transition: all .3s;
+
+            &:hover {
+                color: $color-main;
+            }
+        }
+
     }
 }
