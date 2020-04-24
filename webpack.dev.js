@@ -2,25 +2,17 @@ const path = require("path");
 const common = require("./webpack.common");
 const postcss = require("./post-css.config");
 const merge = require("webpack-merge");
-const CopyPlugin = require('copy-webpack-plugin');
-
-const svgSprite = {
-  from: './images/sprite/icons.svg',
-  to: 'sprite',
-};
 
 module.exports = merge(common, {
   mode: "development",
-  plugins:[
-    new CopyPlugin([svgSprite]),
-  ],
+
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
   },
 
   devServer: {
-    before: function (app, server) {
+    before: function(app, server) {
       server._watch("./static/**/*.html");
     },
     contentBase: path.join(__dirname, "static"),
@@ -30,7 +22,8 @@ module.exports = merge(common, {
   },
 
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.scss$/,
         use: [
           "style-loader",
@@ -46,11 +39,18 @@ module.exports = merge(common, {
           "css-loader",
           {
             loader: "postcss-loader",
-            options: {
-              plugins: postcss.postCSSPlugins
-            }
+            options: { plugins: postcss.postCSSPlugins }
           }
         ]
+      },
+      {
+        test: /\.(svg|png|jpg|jpeg|gif)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+          }
+        }
       },
     ]
   }
