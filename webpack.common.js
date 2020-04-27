@@ -2,12 +2,12 @@ const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const fse = require("fs-extra");
 
-const svgSprite =  new CopyPlugin([{
+const svgSprite = new CopyPlugin([{
   from: './images/icons/sprite.svg',
   to: 'images/icons',
 }]);
 
-let htmlFiles = fse
+let htmlFilesPlugins = fse
   .readdirSync("./static")
   .filter(function (file) {
     return file.endsWith(".html");
@@ -17,8 +17,10 @@ let htmlFiles = fse
       filename: page,
       template: `./static/${page}`,
     });
-  })[0];
+  });
 
+const commonPlugins = htmlFilesPlugins;
+commonPlugins.push(svgSprite)
 
 module.exports = {
   entry: {
@@ -26,21 +28,17 @@ module.exports = {
     vendor: "./scripts/vendor.js"
   },
 
-  plugins: [
-    htmlFiles,
-    svgSprite,
-  ],
+  plugins: commonPlugins,
   module: {
     rules: [{
-        test: /\.html$/,
-        use: {
-          loader: 'html-srcsets-loader',
-          options: {
-            interpolate: true,
-            attrs: ['img:src', ':srcset']
-          }
+      test: /\.html$/,
+      use: {
+        loader: 'html-srcsets-loader',
+        options: {
+          interpolate: true,
+          attrs: ['img:src', ':srcset']
         }
-      },
-    ]
+      }
+    }, ]
   }
 };

@@ -1,0 +1,7 @@
+.footer {
+    padding-bottom: 8rem;
+
+    @include media-queries(atMediumLarge) {
+        padding-bottom: 0rem;
+    }
+}

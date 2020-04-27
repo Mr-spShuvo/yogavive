@@ -1,10 +1,10 @@
-.media-nav{
+.media-nav {
 
-    @include media-queries(atMediumLarge){
+    @include media-queries(atMediumLarge) {
         display: none;
     }
 
-    &__container{
+    &__container {
         height: 100vh;
         width: 100%;
         position: fixed;
@@ -12,30 +12,33 @@
         visibility: hidden;
         opacity: 0;
         background-color: rgba($color-sub, .15);
-        backdrop-filter: blur(3px);
         transform: scale(0);
-        transition: all .1s .2s cubic-bezier(.05,.60,.30,.05);
+        transition: all .1s .1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
         backface-visibility: hidden;
 
-        &--isVisible{
+        @supports(backdrop-filter: blur(0)) {
+            backdrop-filter: blur(3px);
+        }
+
+        &--isVisible {
             visibility: visible;
             opacity: 1;
             transform: scale(1);
 
-            & .media-nav__list{
+            & .media-nav__list {
                 transform: translate(-50%, -55%) scale(1);
                 opacity: 1;
             }
 
-            & ~ .media-menu #media-menu__nav-icon .media-menu__icon{
+            &~.media-menu #media-menu__nav-icon .media-menu__icon {
                 background-color: rgba($color-sub, .3);
             }
         }
     }
 
-    
 
-    &__list{
+
+    &__list {
         border-radius: 1rem;
         list-style: none;
         position: fixed;
@@ -49,37 +52,37 @@
         width: 72%;
         z-index: 11;
         box-shadow: -3px -5px 1.5rem rgba($color-bg, .1);
-        transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition: all .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
 
-    &__item{
-        &--c2a{
+    &__item {
+        &--c2a {
             margin-top: 2.8rem;
         }
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 1.2rem;
-       }
+        }
     }
 
-    &__link{
+    &__link {
         display: inline-block;
         padding: 1rem 5rem;
         text-decoration: none;
         color: $color-light;
         border-radius: 3rem;
-        
-        &:hover{
+
+        &:hover {
             background-color: rgba($color-main, .15);
         }
 
-        &--main{
+        &--main {
             color: $color-main;
         }
     }
 
-    &__clip-path{
+    &__clip-path {
         position: fixed;
         top: 0;
         left: 0;
@@ -90,10 +93,10 @@
         clip-path: ellipse(66% 11.5% at 50% 100%);
     }
 
-    
 
-    
-    .media-menu{
+
+
+    .media-menu {
         position: fixed;
         left: 0;
         bottom: 0;
@@ -103,13 +106,13 @@
         padding: .7rem 1rem;
         width: 100%;
         z-index: 2;
-        
 
-        & > *:hover{
+
+        &>*:hover {
             cursor: pointer;
         }
 
-        &__icon{
+        &__icon {
             fill: $color-sub;
             height: 4.5rem;
             width: 4.5rem;
@@ -117,22 +120,22 @@
             border-radius: 50%;
             transition: all .2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
-            &:hover{
+            &:hover {
                 background-color: rgba($color-sub, .3);
             }
 
-            &:active{
+            &:active {
                 transform: scale(1.15);
                 fill: $color-sub;
                 background-color: transparent;
             }
 
-            &--active{
+            &--active {
                 background-color: $color-sub;
                 fill: $color-main;
                 padding: 1rem;
 
-                &:hover{
+                &:hover {
                     background-color: $color-sub;
                 }
             }

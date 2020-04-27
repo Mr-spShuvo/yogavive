@@ -1,4 +1,4 @@
-.broadcast{
+.broadcast {
     position: fixed;
     bottom: -4rem;
     left: 50%;
@@ -7,19 +7,19 @@
     border-radius: 6rem;
     display: none;
 
-    @include  media-queries(atMediumLarge){
+    @include media-queries(atMediumLarge) {
         display: block;
     }
 
-    &--main{
+    &--main {
         background-color: $color-main;
     }
 
-    &__text{
+    &__text {
         display: block;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: $font-bold;
         letter-spacing: 1px;
         color: $color-sub;
@@ -27,12 +27,12 @@
         padding: 3rem 6rem 5.5rem 9.2rem;
     }
 
-    &__icon{
+    &__icon {
         width: 2.4rem;
         height: 2.4rem;
         left: 5.8rem;
         position: absolute;
         fill: $color-sub;
-        animation: anim-pulse .9s cubic-bezier(0.215, 0.610, 0.355, 1) 2s 10;
+        animation: anim-pulse .9s cubic-bezier(0.215, 0.610, 0.355, 1) 2s infinite;
     }
 }

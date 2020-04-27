@@ -1,0 +1,37 @@
+.desktop-nav {
+    text-align: right;
+    padding: 2.5rem 0;
+    display: none;
+
+    @include media-queries(atMediumLarge) {
+        display: block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        @include media-queries(atMediumLarge) {
+            &:not(:last-child) {
+                margin-right: 3.5rem;
+            }
+        }
+    }
+
+    &__link {
+        color: $color-gray;
+        text-decoration: none;
+        transition: all .3s;
+
+        &:hover {
+            color: $color-main;
+        }
+    }
+}
