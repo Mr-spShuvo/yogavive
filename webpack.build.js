@@ -1,6 +1,6 @@
 const path = require("path");
 const common = require("./webpack.common");
-const postcss = require("./post-css.config");
+const postcss = require("./postcss.config");
 const merge = require("webpack-merge");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");

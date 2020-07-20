@@ -1,86 +1,82 @@
 .header {
-    &--scrolled {
-
-        .header-nav {
-            position: fixed;
-
-            &__logo {
-                visibility: hidden;
-
-                @include media-queries(atMediumLarge) {
-                    visibility: visible;
-                }
-            }
-        }
-
-    }
-
+  &--scrolled {
     .header-nav {
-        background-color: $color-bg;
-        z-index: 1111;
-        width: 100%;
-        box-shadow: 0 .2rem 1rem rgba($color-main, .1);
+      position: fixed;
 
-        &__logo {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-            padding-top: 5rem;
+      &__logo {
+        visibility: hidden;
 
-            img {
-                height: 4.5rem;
-            }
-
-            @include media-queries(atMediumLarge) {
-                padding-top: 3.2rem;
-                left: 7.5%;
-                transform: translate(0%);
-
-                img {
-                    height: 3.6rem;
-                }
-            }
-
-            @include media-queries(atLarge) {
-                padding-top: 3rem;
-
-                img {
-                    height: 4rem;
-                }
-            }
+        @include media-queries(atMediumLarge) {
+          visibility: visible;
         }
-
-
-
-        .header-nav__logo {
-            @include media-queries(atMediumLarge) {
-                padding-top: 2.8rem;
-            }
-
-            @include media-queries(atLarge) {
-                padding-top: 2.5rem;
-            }
-        }
-
-        .desktop-nav {
-            padding: 2rem 0;
-
-            &__link {
-                color: $color-dark;
-
-                &:hover {
-                    color: $color-main;
-                }
-            }
-
-            &__item--c2a a {
-                background-color: $color-main;
-                color: $color-sub;
-
-                &>svg {
-                    fill: $color-sub;
-                }
-            }
-        }
+      }
     }
+  }
+
+  .header-nav {
+    background-color: $color-bg;
+    z-index: 1111;
+    width: 100%;
+    box-shadow: 0 0.2rem 1rem rgba($color-main, 0.1);
+
+    &__logo {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      padding-top: 5rem;
+
+      img {
+        height: 4.5rem;
+      }
+
+      @include media-queries(atMediumLarge) {
+        padding-top: 3.2rem;
+        left: 7.5%;
+        transform: translate(0%);
+
+        img {
+          height: 3.6rem;
+        }
+      }
+
+      @include media-queries(atLarge) {
+        padding-top: 3rem;
+
+        img {
+          height: 4rem;
+        }
+      }
+    }
+
+    .header-nav__logo {
+      @include media-queries(atMediumLarge) {
+        padding-top: 2.8rem;
+      }
+
+      @include media-queries(atLarge) {
+        padding-top: 2.5rem;
+      }
+    }
+
+    .desktop-nav {
+      padding: 2rem 0;
+
+      &__link {
+        color: $color-dark;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+
+      &__item--c2a a {
+        background-color: $color-main;
+        color: $color-sub;
+
+        & > svg {
+          fill: $color-sub;
+        }
+      }
+    }
+  }
 }

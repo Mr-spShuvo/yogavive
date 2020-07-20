@@ -1,38 +1,38 @@
 .broadcast {
-    position: fixed;
-    bottom: -4rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: $color-light;
-    border-radius: 6rem;
-    display: none;
+  position: fixed;
+  bottom: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $color-light;
+  border-radius: 6rem;
+  display: none;
 
-    @include media-queries(atMediumLarge) {
-        display: block;
-    }
+  @include media-queries(atMediumLarge) {
+    display: block;
+  }
 
-    &--main {
-        background-color: $color-main;
-    }
+  &--main {
+    background-color: $color-main;
+  }
 
-    &__text {
-        display: block;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 1.1rem;
-        font-weight: $font-bold;
-        letter-spacing: 1px;
-        color: $color-sub;
-        margin-top: -1.4rem;
-        padding: 3rem 6rem 5.5rem 9.2rem;
-    }
+  &__text {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: $font-regular;
+    letter-spacing: 1px;
+    color: $color-sub;
+    margin-top: -1.4rem;
+    padding: 3rem 6rem 5.5rem 9.2rem;
+  }
 
-    &__icon {
-        width: 2.4rem;
-        height: 2.4rem;
-        left: 5.8rem;
-        position: absolute;
-        fill: $color-sub;
-        animation: anim-pulse .9s cubic-bezier(0.215, 0.610, 0.355, 1) 2s infinite;
-    }
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    left: 5.8rem;
+    position: absolute;
+    fill: $color-sub;
+    animation: anim-pulse 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 2s infinite;
+  }
 }
