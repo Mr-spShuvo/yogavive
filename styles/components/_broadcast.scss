@@ -4,8 +4,9 @@
   left: 50%;
   transform: translateX(-50%);
   color: $color-light;
-  border-radius: 6rem;
+  border-radius: 10rem;
   display: none;
+  backface-visibility: hidden;
 
   @include media-queries(atMediumLarge) {
     display: block;
@@ -19,20 +20,31 @@
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: $font-regular;
+    font-size: 1.3rem;
+    font-weight: $font-medium;
     letter-spacing: 1px;
     color: $color-sub;
     margin-top: -1.4rem;
-    padding: 3rem 6rem 5.5rem 9.2rem;
+    padding: 3rem 6rem 5rem 9.5rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__icon {
-    width: 2.4rem;
-    height: 2.4rem;
-    left: 5.8rem;
+    width: 3.5rem;
+    height: 2.2rem;
+    left: 5rem;
+    top: 1.5rem;
     position: absolute;
     fill: $color-sub;
-    animation: anim-pulse 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 2s infinite;
+    animation: anim-pulse 0.9s ease-in-out 2s infinite;
+  }
+
+  &__slide-down {
+    opacity: 0;
+    transition: all 0.3s ease-out;
   }
 }

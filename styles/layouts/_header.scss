@@ -1,18 +1,4 @@
 .header {
-  &--scrolled {
-    .header-nav {
-      position: fixed;
-
-      &__logo {
-        visibility: hidden;
-
-        @include media-queries(atMediumLarge) {
-          visibility: visible;
-        }
-      }
-    }
-  }
-
   .header-nav {
     background-color: $color-bg;
     z-index: 1111;
@@ -57,24 +43,18 @@
         padding-top: 2.5rem;
       }
     }
+  }
 
-    .desktop-nav {
-      padding: 2rem 0;
+  &--scrolled {
+    .header-nav {
+      position: fixed;
+      background-color: $color-main;
 
-      &__link {
-        color: $color-dark;
+      &__logo {
+        visibility: hidden;
 
-        &:hover {
-          opacity: 0.9;
-        }
-      }
-
-      &__item--c2a a {
-        background-color: $color-main;
-        color: $color-sub;
-
-        & > svg {
-          fill: $color-sub;
+        @include media-queries(atMediumLarge) {
+          visibility: visible;
         }
       }
     }

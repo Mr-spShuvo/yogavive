@@ -1,4 +1,4 @@
-[class^="ic-"], [class*=" ic-"] {
+.icon {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -9,7 +9,7 @@
 
 /* ==========================================
 Single-colored icons can be modified like so:
-.ic-name {
+.name {
   font-size: 32px;
   color: red;
 }

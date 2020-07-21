@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>YogaVive</title>
   </head>
 
   <body class="homepage">
@@ -15,28 +15,28 @@
               <img src="../images/logo/logo.png" alt="Yogavive Logo" />
             </a>
           </div>
-          <nav class="desktop-nav desktop-nav--scrolled">
+          <nav class="desktop-nav">
             <ul class="desktop-nav__list">
               <li class="desktop-nav__item">
-                <a href="#" class="desktop-nav__link desktop-nav__link--main">
-                  Training Programs
+                <a href="#packages" class="desktop-nav__link">
+                  Training Packages
                 </a>
               </li>
               <li class="desktop-nav__item">
-                <a href="#" class="desktop-nav__link">Blog</a>
+                <a href="#about" class="desktop-nav__link">About</a>
               </li>
               <li class="desktop-nav__item">
-                <a href="about-us.html" class="desktop-nav__link">About Us</a>
+                <a href="#testimonials" class="desktop-nav__link">Testimonials</a>
               </li>
               <li class="desktop-nav__item">
-                <a href="#" class="desktop-nav__link">Contact</a>
+                <a href="#contact" class="desktop-nav__link">Contact</a>
               </li>
               <li class="desktop-nav__item desktop-nav__item--c2a">
-                <a href="#" class="button button--sub">
+                <a href="#" class="button button--main">
                   <svg>
-                    <use xlink:href="images/icons/sprite.svg#add-user"></use>
+                    <use xlink:href="images/icons/sprite.svg#user-plus"></use>
                   </svg>
-                  Join Today
+                  &nbsp; Join Today
                 </a>
               </li>
             </ul>
@@ -47,33 +47,25 @@
           <div class="media-nav__container">
             <ul class="media-nav__list">
               <li class="media-nav__item">
-                <a
-                  href="#training-programs"
-                  class="media-nav__link media-nav__link--main"
-                >
-                  Training Programs
+                <a href="#packages" class="media-nav__link">
+                  Training Packages
                 </a>
               </li>
               <li class="media-nav__item">
-                <a href="blog.html" class="media-nav__link">Blog</a>
+                <a href="#about" class="media-nav__link">About</a>
               </li>
               <li class="media-nav__item">
-                <a href="about-us.html" class="media-nav__link">About Us</a>
+                <a href="#testimonials" class="media-nav__link">Testimonials</a>
               </li>
               <li class="media-nav__item">
-                <a href="#contact-us" class="media-nav__link">Contact</a>
-              </li>
-              <li class="media-nav__item">
-                <a href="live-training.html" class="media-nav__link"
-                  >Live Training</a
-                >
+                <a href="#contact" class="media-nav__link">Contact</a>
               </li>
               <li class="media-nav__item media-nav__item--c2a">
-                <a href="#contact-us" class="button button--main">
+                <a href="#" class="button button--main">
                   <svg>
-                    <use xlink:href="images/icons/sprite.svg#home"></use>
+                    <use xlink:href="images/icons/sprite.svg#user-plus"></use>
                   </svg>
-                  Join Today
+                  &nbsp; Join Today
                 </a>
               </li>
             </ul>
@@ -101,46 +93,31 @@
     </header>
 
     <div class="hero-sec">
-      <picture>
-        <source
-          srcset="
-            ../images/hero-bg/hero-desktop.png    1920w,
-            ../images/hero-bg/hero-desktop-lg.png 3840w
-          "
-          media="(min-width: 1100px"
-        />
-        <source
-          srcset="
-            ../images/hero-bg/hero-tablet.png    1152w,
-            ../images/hero-bg/hero-tablet-lg.png 1536w
-          "
-          media="(min-width: 520px)"
-        />
-        <img
-          class="hero-sec__bg"
-          srcset="
-            ../images/hero-bg/hero-mobile.png  540w,
-            ../images/hero-bg/hero-mobile.png 1080w
-          "
-          alt="YogaVive Yoga Background Image"
-        />
-      </picture>
-
       <div class="hero-sec__box">
         <h2 class="hero-sec__heading">Helps You Revive</h2>
         <p class="hero-sec__text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-          quibusdam suscipit ex perspiciatis dignissimos aliquam ipsa error
-          labore.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam suscipit ex perspiciatis dignissimos aliquam ipsa error labore.
         </p>
-        <a href="#" class="button button--main">Learn More</a>
+        <a href="#" class="hero-sec__c2a button button--sub"
+          >Learn More &nbsp;
+          <svg>
+            <use xlink:href="images/icons/sprite.svg#arrow-right"></use></svg
+        ></a>
+      </div>
+
+      <div class="hero-sec__imgbox">
+        <picture>
+          <source srcset="../images/hero/hero-desktop.png 1440w, ../images/hero/hero-desktop-lg.png 2250w" media="(min-width: 1100px)" />
+          <source srcset="../images/hero/hero-tablet.png 900w, ../images/hero/hero-tablet-lg.png 1400w" media="(min-width: 520px)" />
+          <img class="hero-sec__img" srcset="../images/hero/hero-mobile.png 500w, ../images/hero/hero-mobile.png 780w" alt="YogaVive Yoga Background Image" />
+        </picture>
       </div>
     </div>
 
     <div class="broadcast broadcast--main">
-      <a class="broadcast__text" href="#">
+      <a class="broadcast__text" href="#contact">
         <svg class="broadcast__icon">
-          <use xlink:href="images/icons/sprite.svg#megaphone"></use>
+          <use xlink:href="images/icons/sprite.svg#feed"></use>
         </svg>
         Live Class is Available Now
       </a>

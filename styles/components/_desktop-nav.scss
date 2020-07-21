@@ -26,12 +26,25 @@
   }
 
   &__link {
-    color: $color-gray;
+    color: $color-sub;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: $color-main;
+      color: $color-dark-gray;
+    }
+  }
+
+  &--scrolled {
+    .desktop-nav {
+      &__item--c2a .button {
+        color: $color-main;
+        background-color: $color-sub;
+
+        & > svg {
+          fill: $color-main;
+        }
+      }
     }
   }
 }
