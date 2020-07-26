@@ -27,11 +27,11 @@
   }
 
   &--sub {
-    color: $color-main;
+    color: $color-bg;
     background-color: $color-sub;
 
     & > svg {
-      fill: $color-main;
+      fill: $color-bg;
     }
   }
 

@@ -38,11 +38,21 @@
   &--scrolled {
     .desktop-nav {
       &__item--c2a .button {
-        color: $color-main;
+        color: $color-bg;
         background-color: $color-sub;
 
         & > svg {
-          fill: $color-main;
+          fill: $color-bg;
+        }
+      }
+
+      &__link {
+        color: $color-bg;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: $color-light;
         }
       }
     }

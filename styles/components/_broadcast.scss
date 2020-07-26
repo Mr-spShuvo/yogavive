@@ -1,5 +1,6 @@
 .broadcast {
   position: fixed;
+  z-index: 111;
   bottom: -4rem;
   left: 50%;
   transform: translateX(-50%);

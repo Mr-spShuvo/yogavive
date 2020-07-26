@@ -1,0 +1,52 @@
+.section {
+  padding: $sec-ptb-sm;
+  @include media-queries(atMedium) {
+    padding: $sec-ptb-md;
+  }
+  @include media-queries(atLarge) {
+    padding: $sec-ptb-lg;
+  }
+
+  .section-header {
+    padding: 0 1rem;
+    margin-bottom: 8rem;
+    position: relative;
+
+    ::before {
+      content: '';
+      height: 95%;
+      width: 1rem;
+      background-color: $color-sub;
+      position: absolute;
+      top: 0.5rem;
+      left: 0;
+    }
+
+    ::after {
+      content: '';
+      height: 1rem;
+      width: 75%;
+      background-color: $color-light;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__img {
+      width: auto;
+      height: 3.5rem;
+      padding-left: 2rem;
+    }
+
+    &__title {
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      color: $color-sub;
+      padding: 0;
+      margin: 0;
+      line-height: 0.8;
+      padding-left: 2rem;
+    }
+  }
+}

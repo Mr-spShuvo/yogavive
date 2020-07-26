@@ -11,11 +11,12 @@
 @import 'components/broadcast';
 @import 'components/desktop-nav';
 @import 'components/media-nav';
-
+@import 'components/section';
 
 @import 'layouts/header';
 @import 'layouts/footer';
-
+@import 'layouts/features';
+@import 'layouts/packages';
 
 @import 'pages/home';
 @import 'pages/blog';

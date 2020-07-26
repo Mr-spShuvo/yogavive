@@ -1,8 +1,8 @@
-@mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*_______________________________________
@@ -15,39 +15,29 @@ Media Queries (Mobile-first Approach):
     (min-width: 1920px) - atLarger
 _______________________________________*/
 @mixin media-queries($breakpoints) {
-    @if $breakpoints==atSmall {
-        @media only screen and (min-width:480px) {
-            @content;
-        }
+  @if $breakpoints==atSmall {
+    @media only screen and (min-width: 480px) {
+      @content;
     }
-
-    @else if $breakpoints==atMedium {
-        @media only screen and (min-width:600px) {
-            @content;
-        }
+  } @else if $breakpoints==atMedium {
+    @media only screen and (min-width: 600px) {
+      @content;
     }
-
-    @else if $breakpoints==atMediumLarge {
-        @media only screen and (min-width:900px) {
-            @content;
-        }
+  } @else if $breakpoints==atMediumLarge {
+    @media only screen and (min-width: 900px) {
+      @content;
     }
-
-    @else if $breakpoints==atLarge {
-        @media only screen and (min-width:1200px) {
-            @content;
-        }
+  } @else if $breakpoints==atLarge {
+    @media only screen and (min-width: 1200px) {
+      @content;
     }
-
-    @else if $breakpoints==atLarger {
-        @media only screen and (min-width:1920px) {
-            @content;
-        }
+  } @else if $breakpoints==atLarger {
+    @media only screen and (min-width: 1920px) {
+      @content;
     }
-
-    @else {
-        @media only screen and (min-width:$breakpoints) {
-            @content;
-        }
+  } @else {
+    @media only screen and (min-width: $breakpoints) {
+      @content;
     }
+  }
 }

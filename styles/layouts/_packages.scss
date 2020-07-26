@@ -1,0 +1,112 @@
+.packages-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 33%;
+
+  .packages-box {
+    width: 100%;
+    padding: 3rem;
+    border: 3px solid $color-light;
+
+    &__header {
+      display: flex;
+      border-bottom: 3px solid $color-light;
+      padding-bottom: 2rem;
+      align-items: center;
+    }
+    &__icon {
+      height: 7rem;
+      width: 7rem;
+      background-color: $color-bg;
+      border-radius: 50%;
+      padding: 0.5rem;
+      margin-right: 2rem;
+      text-align: center;
+      & > img {
+        height: 100%;
+      }
+    }
+    &__title {
+      font-weight: $font-bold;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: $color-main;
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+
+    &__body {
+      list-style: none;
+      padding: 3rem;
+    }
+
+    &__features {
+      margin-left: 3rem;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &::before {
+        content: '\2714';
+        color: $color-main;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+      }
+    }
+
+    &__footer {
+      border-top: 3px solid $color-light;
+      padding-top: 3rem;
+      text-align: center;
+      font-weight: $font-semi-bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: $color-dark-gray;
+    }
+
+    &__price-prev {
+      position: relative;
+      font-size: 2rem;
+      display: inline-block;
+
+      &::after {
+        content: '';
+        width: 100%;
+        background-color: $color-dark-gray;
+        height: 3px;
+        @include abs-center;
+      }
+    }
+
+    &__price-now {
+      margin-top: 1rem;
+    }
+
+    &__price-tag {
+      color: $color-main;
+      font-size: 4.2rem;
+    }
+
+    &--popular {
+      background-color: $color-bg;
+      transform: scale(1.1);
+      position: relative;
+
+      &::before {
+        content: 'Most Popular';
+        position: absolute;
+        top: -2.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-bg;
+        padding: 0.8rem 4rem;
+        background-color: $color-main;
+      }
+
+      .packages-box__icon {
+        background-color: $color-light;
+      }
+    }
+  }
+}

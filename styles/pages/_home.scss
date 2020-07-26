@@ -93,4 +93,14 @@
       }
     }
   }
+
+  .main-area {
+    padding: $sec-ptb-sm;
+    @include media-queries(atMedium) {
+      padding: $sec-ptb-md;
+    }
+    @include media-queries(atLarge) {
+      padding: $sec-ptb-lg;
+    }
+  }
 }
