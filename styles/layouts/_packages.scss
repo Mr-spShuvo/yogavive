@@ -41,7 +41,8 @@
     }
 
     &__features {
-      margin-left: 3rem;
+      font-size: 1.3rem;
+      margin-left: 2.5rem;
       &:not(:last-child) {
         margin-bottom: 2rem;
       }
@@ -68,13 +69,14 @@
     &__price-prev {
       position: relative;
       font-size: 2rem;
+      font-weight: $font-medium;
       display: inline-block;
 
       &::after {
         content: '';
         width: 100%;
         background-color: $color-dark-gray;
-        height: 3px;
+        height: 2.5px;
         @include abs-center;
       }
     }
@@ -106,6 +108,22 @@
 
       .packages-box__icon {
         background-color: $color-light;
+      }
+    }
+  }
+
+  &--others {
+    margin-top: 10rem;
+
+    .packages-box {
+      flex-basis: 48.5%;
+
+      &__footer {
+        text-align: right;
+      }
+
+      &__price-now {
+        margin-top: -1rem;
       }
     }
   }
