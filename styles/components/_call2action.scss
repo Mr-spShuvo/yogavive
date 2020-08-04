@@ -1,0 +1,22 @@
+.call2action {
+  background-color: $color-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+
+  .call2action-box {
+    flex-basis: 75%;
+    &__title {
+      color: $color-main;
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+
+    &__info {
+      font-size: 1.4rem;
+      color: $color-dark-gray;
+    }
+  }
+}

@@ -24,8 +24,6 @@ let htmlFilesPlugins = fse
 const commonPlugins = htmlFilesPlugins;
 commonPlugins.push(svgSprite);
 
-console.log(htmlFilesPlugins);
-
 module.exports = {
   entry: {
     main: './scripts/app.js',
