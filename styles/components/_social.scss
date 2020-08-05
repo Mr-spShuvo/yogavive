@@ -1,0 +1,20 @@
+.social-menu {
+  display: flex;
+  width: 18rem;
+  justify-content: space-between;
+  list-style: none;
+
+  &__link {
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: $color-light;
+    position: relative;
+    display: inline-block;
+    & > svg {
+      @include abs-center;
+      width: 2.2rem;
+      height: 2.2rem;
+      fill: $color-main;
+    }
+  }
+}

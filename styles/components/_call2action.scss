@@ -1,12 +1,12 @@
 .call2action {
-  background-color: $color-bg;
+  background-color: $color-light;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5rem;
 
   .call2action-box {
-    flex-basis: 75%;
+    flex-basis: 70%;
     &__title {
       color: $color-main;
       font-size: 3rem;
@@ -15,7 +15,7 @@
     }
 
     &__info {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       color: $color-dark-gray;
     }
   }

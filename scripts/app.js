@@ -1,4 +1,5 @@
 import '../styles/app.scss';
+import 'plyr/src/sass/plyr.scss';
 
 import MediaNav from './modules/MediaNav';
 import ScrollOnNav from './modules/ScrollOnNav';
@@ -23,3 +24,6 @@ BroadcastToggler.toggleOnScroll();
 if (module.hot) {
   module.hot.accept();
 }
+
+import Plyr from 'plyr';
+const player = new Plyr('#player');
