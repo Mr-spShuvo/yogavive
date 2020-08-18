@@ -24,10 +24,22 @@ const BroadcastToggler = new ClassToggler(
 );
 BroadcastToggler.toggleOnScroll();
 
+// Video Player
+new Plyr("#player");
+
+// Gallery
+import SimpleLightbox from "simplelightbox/dist/simple-lightbox.modules";
+import "simplelightbox/dist/simple-lightbox.css";
+new SimpleLightbox(".gallery-box__img");
+
+/**
+ *
+ *
+ *
+ *
+ *
+ */
 // Webpack Config
 if (module.hot) {
   module.hot.accept();
 }
-
-// Video Player
-const player = new Plyr("#player");

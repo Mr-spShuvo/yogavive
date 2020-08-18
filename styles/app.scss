@@ -1,27 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Manrope:400,500,600,800&display=swap');
+@import "abstract/variable";
+@import "abstract/mixins";
+@import "abstract/utilities";
+@import "abstract/animation";
 
-@import 'abstract/variable';
-@import 'abstract/mixins';
-@import 'abstract/utilities';
-@import 'abstract/animation';
+@import "base/base";
 
-@import 'base/base';
+@import "components/button";
+@import "components/broadcast";
+@import "components/desktop-nav";
+@import "components/media-nav";
+@import "components/section";
+@import "components/call2action";
+@import "components/social";
 
-@import 'components/button';
-@import 'components/broadcast';
-@import 'components/desktop-nav';
-@import 'components/media-nav';
-@import 'components/section';
-@import 'components/call2action';
-@import 'components/social';
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/features";
+@import "layouts/packages";
+@import "layouts/about";
+@import "layouts/gallery";
 
-@import 'layouts/header';
-@import 'layouts/footer';
-@import 'layouts/features';
-@import 'layouts/packages';
-@import 'layouts/about';
-
-@import 'pages/home';
-@import 'pages/blog';
-@import 'pages/about';
-@import 'pages/404';
+@import "pages/home";
+@import "pages/blog";
+@import "pages/about";
+@import "pages/404";

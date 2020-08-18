@@ -30,7 +30,7 @@
     "html-webpack-plugin": "^3.2.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-hexrgba": "^2.0.0",
     "postcss-import": "^12.0.1",
@@ -42,12 +42,11 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "plyr": "^3.6.2",
-    "simplelightbox": "^2.2.1",
-    "update": "^0.7.4"
+    "simplelightbox": "^2.2.1"
   }
 }
