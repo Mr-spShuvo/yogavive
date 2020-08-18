@@ -81,3 +81,51 @@
     color: $color-dark-gray;
   }
 }
+
+.yogapose {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  margin-bottom: -5rem;
+
+  .yogapose-box {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+    background-color: $color-light;
+
+    @include media-queries(atMedium) {
+      flex-basis: 48%;
+    }
+
+    @include media-queries(atLarge) {
+      flex-basis: 23%;
+    }
+
+    &__icon {
+      background-color: $color-bg;
+      img {
+        padding-top: 3rem;
+        height: 13rem;
+        bottom: 0;
+      }
+    }
+
+    &__info {
+      margin-top: 1rem;
+      padding: 2rem;
+    }
+
+    &__title {
+      color: $color-main;
+      margin-bottom: 1rem;
+    }
+
+    &__details {
+      font-size: 1.2rem;
+      color: $color-dark-gray;
+      text-align: justify;
+    }
+  }
+}
