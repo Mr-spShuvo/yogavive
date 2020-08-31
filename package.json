@@ -46,6 +46,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "plyr": "^3.6.2",
     "simplelightbox": "^2.2.1"
   }
