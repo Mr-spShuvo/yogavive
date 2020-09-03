@@ -8,17 +8,18 @@ module.exports = merge(common, {
 
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
 
   devServer: {
-    before: function(app, server) {
+    before: function (app, server) {
       server._watch("./static/**/*.html");
     },
     contentBase: path.join(__dirname, "static"),
     hot: true,
     port: 3000,
-    host: "localhost"
+    host: "localhost",
+    disableHostCheck: true,
   },
 
   module: {
@@ -29,8 +30,8 @@ module.exports = merge(common, {
           "style-loader",
           "css-loader",
           postcss.postCSSAutoPrefixer,
-          "sass-loader"
-        ]
+          "sass-loader",
+        ],
       },
       {
         test: /\.css$/,
@@ -39,9 +40,9 @@ module.exports = merge(common, {
           "css-loader",
           {
             loader: "postcss-loader",
-            options: { plugins: postcss.postCSSPlugins }
-          }
-        ]
+            options: { plugins: postcss.postCSSPlugins },
+          },
+        ],
       },
       {
         test: /\.(svg|png|jpg|jpeg|gif)$/,
@@ -49,9 +50,9 @@ module.exports = merge(common, {
           loader: "file-loader",
           options: {
             name: "[name].[ext]",
-          }
-        }
+          },
+        },
       },
-    ]
-  }
+    ],
+  },
 });
