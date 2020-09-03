@@ -1,3 +1,5 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
 // Glide SCSS
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
@@ -24,6 +26,7 @@
 @import "layouts/about";
 @import "layouts/gallery";
 @import "layouts/testimonials";
+@import "layouts/contact";
 
 @import "pages/home";
 @import "pages/blog";

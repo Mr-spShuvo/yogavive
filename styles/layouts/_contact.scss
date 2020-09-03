@@ -1,0 +1,61 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    flex-basis: 40%;
+  }
+
+  &__map {
+    flex-basis: 55%;
+
+    & > iframe {
+      width: 100%;
+      height: 420px;
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    color: $color-main;
+    text-transform: uppercase;
+    width: 60%;
+  }
+
+  &__phone,
+  &__mail,
+  &__address {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: $font-medium;
+    color: $color-dark-gray;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    span:first-child {
+      margin-right: 1rem;
+    }
+  }
+
+  &__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 50%;
+    background-color: $color-bg;
+
+    & > svg {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      fill: $color-main;
+    }
+  }
+}
