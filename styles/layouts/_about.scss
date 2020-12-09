@@ -2,10 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap-reverse;
 
   &__info {
-    flex-basis: 45%;
     line-height: 1;
+    flex-basis: 100%;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 45%;
+    }
   }
 
   &__title {
@@ -24,9 +29,13 @@
 
   &__name {
     color: $color-main;
-    font-size: 4.8rem;
+    font-size: 4rem;
     font-weight: $font-bold;
     margin-bottom: 3rem;
+
+    @include media-queries(atMediumLarge) {
+      font-size: 4.8rem;
+    }
   }
 
   &__msg {
@@ -40,10 +49,17 @@
   }
 
   &__img {
-    flex-basis: 42%;
     background-color: $color-light;
     padding: 10rem;
     padding-bottom: 0;
+    flex-basis: 100%;
+    margin-bottom: 5rem;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 42%;
+      margin-bottom: 0rem;
+    }
+
     img {
       display: block;
       width: 100%;
@@ -56,16 +72,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap-reverse;
 
   &__box {
-    flex-basis: 45%;
     background-color: $color-main;
     padding: 0.5rem;
     box-shadow: $shadow;
+    flex-basis: 100%;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 45%;
+    }
   }
 
   &__info {
-    flex-basis: 50%;
+    flex-basis: 100%;
+    margin-bottom: 3rem;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 50%;
+      margin-bottom: 0;
+    }
   }
 
   &__title {

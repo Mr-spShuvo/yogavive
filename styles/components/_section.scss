@@ -17,7 +17,7 @@
     position: relative;
 
     ::before {
-      content: '';
+      content: "";
       height: 95%;
       width: 1rem;
       background-color: $color-sub;
@@ -27,14 +27,18 @@
     }
 
     ::after {
-      content: '';
-      height: 1rem;
+      content: "";
       width: 75%;
       background-color: $color-light;
       position: absolute;
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      height: 0.5rem;
+
+      @include media-queries(atMediumLarge) {
+        height: 1rem;
+      }
     }
 
     &__img {

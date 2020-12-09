@@ -137,12 +137,14 @@
 
       @include media-queries(atMediumLarge) {
         flex-basis: 48.5%;
-
         margin-bottom: 0rem;
       }
 
       &__footer {
-        text-align: right;
+        text-align: center;
+        @include media-queries(atMediumLarge) {
+          text-align: right;
+        }
       }
 
       &__price-now {
