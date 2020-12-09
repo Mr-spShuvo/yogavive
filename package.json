@@ -1,11 +1,11 @@
 {
-  "name": "webpack-static-workflow",
+  "name": "yogavive",
   "private": true,
   "version": "1.0.0",
-  "description": "A Webpack static workflow automation starter template.",
+  "description": "A Responsive Landing page for Yogavive (Helps You Revive).",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mr-spShuvo/webpack-static-workflow.git"
+    "url": "https://github.com/Mr-spShuvo/yogavive.git"
   },
   "author": "1MANDEV",
   "license": "ISC",

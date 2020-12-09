@@ -2,12 +2,17 @@
   padding-top: 4.5rem;
   display: flex;
   justify-content: space-between;
-  flex-basis: 33%;
+  flex-wrap: wrap;
 
   .packages-box {
-    width: 100%;
+    //width: 100%;
     padding: 3rem;
     border: 3px solid $color-light;
+    flex-basis: 100%;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 33%;
+    }
 
     &__header {
       display: flex;
@@ -15,6 +20,7 @@
       padding-bottom: 2rem;
       align-items: center;
     }
+
     &__icon {
       height: 7rem;
       width: 7rem;
@@ -49,7 +55,7 @@
       }
 
       &::before {
-        content: '\2714';
+        content: "\2714";
         color: $color-main;
         width: 2rem;
         height: 2rem;
@@ -74,7 +80,7 @@
       display: inline-block;
 
       &::after {
-        content: '';
+        content: "";
         width: 100%;
         background-color: $color-dark-gray;
         height: 2.5px;
@@ -95,9 +101,16 @@
       background-color: $color-bg;
       transform: scale(1.1);
       position: relative;
+      margin-top: 9rem;
+      margin-bottom: 7rem;
+
+      @include media-queries(atMediumLarge) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
 
       &::before {
-        content: 'Most Popular';
+        content: "Most Popular";
         position: absolute;
         top: -2.3rem;
         left: 50%;
@@ -114,10 +127,19 @@
   }
 
   &--others {
-    margin-top: 10rem;
+    @include media-queries(atMediumLarge) {
+      margin-top: 10rem;
+    }
 
     .packages-box {
-      flex-basis: 48.5%;
+      flex-basis: 100%;
+      margin-bottom: 5rem;
+
+      @include media-queries(atMediumLarge) {
+        flex-basis: 48.5%;
+
+        margin-bottom: 0rem;
+      }
 
       &__footer {
         text-align: right;

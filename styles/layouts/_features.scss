@@ -1,19 +1,30 @@
 .features-boxes {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
 
   .features-box {
     backface-visibility: hidden;
     transition: all 0.1s ease-in-out;
+    flex-basis: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 32%;
+      &:not(:last-child) {
+        margin-bottom: 0rem;
+      }
+    }
 
     &:hover {
       box-shadow: 1px 1px 1rem rgba($color-sub, 0.05);
       transform: translateY(-5px) scale(1.01);
     }
 
-    &:not(:last-child) {
-      margin-right: 6rem;
-    }
     &__img {
       background-color: $color-bg;
       text-align: center;

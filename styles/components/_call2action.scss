@@ -4,9 +4,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 5rem;
+  flex-wrap: wrap;
 
   .call2action-box {
-    flex-basis: 70%;
+    flex-basis: 100%;
+    margin-bottom: 3rem;
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 70%;
+      margin-bottom: 0rem;
+    }
+
     &__title {
       color: $color-main;
       font-size: 3rem;
