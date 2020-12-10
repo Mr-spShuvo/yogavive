@@ -22,7 +22,7 @@ mediaNav.toggleMenu();
 
 // Navigation on Scroll
 const scrollOnNav = new ScrollOnNav(logo, logoWH);
-scrollOnNav.scrollOn();
+scrollOnNav.invoke();
 
 // Hide Broadcast on Scroll
 const BroadcastToggler = new ClassToggler(

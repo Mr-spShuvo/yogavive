@@ -118,6 +118,10 @@
         color: $color-bg;
         padding: 0.8rem 4rem;
         background-color: $color-main;
+        font-size: 1.3rem;
+        @include media-queries(atMediumLarge) {
+          font-style: 2rem;
+        }
       }
 
       .packages-box__icon {

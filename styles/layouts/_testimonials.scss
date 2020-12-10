@@ -5,19 +5,27 @@
     width: 100%;
     height: auto;
   }
+
   .testimonial {
     display: flex;
     justify-content: space-around;
     padding: 10rem 0;
+    flex-wrap: wrap;
 
     &__gallery {
       display: flex;
       justify-content: space-between;
-      flex-basis: 50%;
       height: 55rem;
+      flex-basis: 100%;
+      @include media-queries(atMediumLarge) {
+        flex-basis: 50%;
+      }
     }
     &__img {
-      flex-basis: 50%;
+      flex-basis: 100%;
+      @include media-queries(atMediumLarge) {
+        flex-basis: 50%;
+      }
 
       img {
         width: 100%;
@@ -43,7 +51,10 @@
     }
 
     &__info {
-      flex-basis: 45%;
+      flex-basis: 85%;
+      @include media-queries(atMediumLarge) {
+        flex-basis: 45%;
+      }
     }
 
     &__icon {

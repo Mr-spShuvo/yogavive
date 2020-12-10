@@ -38,7 +38,13 @@ module.exports = {
           loader: "html-srcsets-loader",
           options: {
             interpolate: true,
-            attrs: ["a:link", "img:src", ":srcset"],
+            attrs: [
+              "a:link",
+              "img:src",
+              ":srcset",
+              ":data-src",
+              ":data-srcset",
+            ],
           },
         },
       },

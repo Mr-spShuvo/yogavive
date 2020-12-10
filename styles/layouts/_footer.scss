@@ -28,8 +28,16 @@
 
   .footer-top {
     background-color: $color-footer-bg;
-    padding-top: 3rem;
     padding-bottom: 10rem;
+    padding-top: 0rem;
+
+    @include media-queries(atMediumLarge) {
+      padding-top: 2rem;
+    }
+
+    @include media-queries(atMediumLarge) {
+      padding-top: 3rem;
+    }
 
     & > .content-box {
       display: flex;

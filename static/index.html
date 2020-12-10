@@ -109,15 +109,15 @@
 
     <div class="hero-sec__imgbox">
       <picture>
-        <source srcset="
+        <source data-srcset="
               ../images/hero/hero-desktop.png    1440w,
               ../images/hero/hero-desktop-lg.png 2250w
             " media="(min-width: 1100px)" />
-        <source srcset="
+        <source data-srcset="
               ../images/hero/hero-tablet.png     900w,
               ../images/hero/hero-tablet-lg.png 1400w
             " media="(min-width: 520px)" />
-        <img class="hero-sec__img" srcset="
+        <img class="hero-sec__img lazyload" data-srcset="
               ../images/hero/hero-mobile.png    500w,
               ../images/hero/hero-mobile-lg.png 780w
             " alt="YogaVive Yoga Background Image" />
@@ -139,13 +139,13 @@
     <section id="features" class="section">
       <div class="content-box">
         <div class="section-header">
-          <img class="section-header__img" src="../images/logo/logo.png" alt="Yogavive Logo" />
+          <img class="section-header__img lazyload" data-src="../images/logo/logo.png" alt="Yogavive Logo" />
           <h2 class="section-header__title">Features</h2>
         </div>
         <div class="features-boxes">
           <div class="features-box">
             <div class="features-box__img">
-              <img alt="Features Image - 1" sizes="(min-width: 970px) 976px, 100vw" srcset="
+              <img class="lazyload" alt="Features Image - 1" sizes="(min-width: 970px) 976px, 100vw" data-srcset="
                     ../images/features/feature-1.png     900w,
                     ../images/features/feature-1-lg.png 1400w
                   " />
@@ -162,7 +162,7 @@
           </div>
           <div class="features-box">
             <div class="features-box__img">
-              <img alt="Features Image - 2" sizes="(min-width: 970px) 976px, 100vw" srcset="
+              <img class="lazyload" alt="Features Image - 2" sizes="(min-width: 970px) 976px, 100vw" data-srcset="
                     ../images/features/feature-2.png     900w,
                     ../images/features/feature-2-lg.png 1400w
                   " />
@@ -179,7 +179,7 @@
           </div>
           <div class="features-box">
             <div class="features-box__img">
-              <img alt="Features Image - 3" sizes="(min-width: 970px) 976px, 100vw" srcset="
+              <img class="lazyload" alt="Features Image - 3" sizes="(min-width: 970px) 976px, 100vw" data-srcset="
                     ../images/features/feature-3.png     900w,
                     ../images/features/feature-3-lg.png 1400w
                   " />
@@ -202,14 +202,14 @@
     <section id="packages" class="section">
       <div class="content-box">
         <div class="section-header">
-          <img class="section-header__img" src="../images/logo/logo.png" alt="Yogavive Logo" />
+          <img class="section-header__img lazyload" data-src="../images/logo/logo.png" alt="Yogavive Logo" />
           <h2 class="section-header__title">Packages</h2>
         </div>
         <div class="packages-boxes">
           <div class="packages-box">
             <div class="packages-box__header">
               <div class="packages-box__icon">
-                <img src="../images/packages/pkg-beginner.png" />
+                <img class="lazyload" data-src="../images/packages/pkg-beginner.png" />
               </div>
               <div class="packages-box__info">
                 <div class="packages-box__title">Beginner Class</div>
@@ -233,7 +233,7 @@
           <div class="packages-box packages-box--popular">
             <div class="packages-box__header">
               <div class="packages-box__icon">
-                <img src="../images/packages/pkg-regular.png" />
+                <img class="lazyload" data-src="../images/packages/pkg-regular.png" />
               </div>
               <div class="packages-box__info">
                 <div class="packages-box__title">Regular Class</div>
@@ -257,7 +257,7 @@
           <div class="packages-box">
             <div class="packages-box__header">
               <div class="packages-box__icon">
-                <img src="../images/packages/pkg-special.png" />
+                <img class="lazyload" data-src="../images/packages/pkg-special.png" />
               </div>
               <div class="packages-box__info">
                 <div class="packages-box__title">Special Class</div>
@@ -286,7 +286,7 @@
           <div class="packages-box">
             <div class="packages-box__header">
               <div class="packages-box__icon">
-                <img src="../images/packages/pkg-bridal.png" />
+                <img class="lazyload" data-src="../images/packages/pkg-bridal.png" />
               </div>
               <div class="packages-box__info">
                 <div class="packages-box__title">Bridal Shape-in Package</div>
@@ -311,7 +311,7 @@
           <div class="packages-box">
             <div class="packages-box__header">
               <div class="packages-box__icon">
-                <img src="../images/packages/pkg-weightgain.png" />
+                <img class="lazyload" data-src="../images/packages/pkg-weightgain.png" />
               </div>
               <div class="packages-box__info">
                 <div class="packages-box__title">Weight-Gain Package</div>
@@ -365,7 +365,7 @@
     <section id="about" class="section">
       <div class="content-box">
         <div class="section-header">
-          <img class="section-header__img" src="../images/logo/logo.png" alt="Yogavive Logo" />
+          <img class="section-header__img lazyload" data-src="../images/logo/logo.png" alt="Yogavive Logo" />
           <h2 class="section-header__title">Message</h2>
         </div>
         <div class="instructor">
@@ -413,15 +413,15 @@
           <div class="instructor__img">
             <!-- TODO:// Fix img croping situation -->
             <picture>
-              <source srcset="
+              <source data-srcset="
                     ../images/about/about-desktop.png    300w,
                     ../images/about/about-desktop-lg.png 600w
                   " media="(min-width: 1100px)" />
-              <source srcset="
+              <source data-srcset="
                     ../images/about/about-tablet.png    300w,
                     ../images/about/about-tablet-lg.png 600w
                   " media="(min-width: 720px)" />
-              <img srcset="
+              <img class="lazyload" data-srcset="
                     ../images/about/about-mobile.png    300w,
                     ../images/about/about-mobile-lg.png 600w
                   " alt="YogaVive Yoga Background Image" />
@@ -450,7 +450,7 @@
         <div class="yogapose">
           <div class="yogapose-box">
             <div class="yogapose-box__icon">
-              <img src="../images/yogapose/yogapose-1.png" alt="" />
+              <img class="lazyload" data-src="../images/yogapose/yogapose-1.png" alt="" />
             </div>
             <div class="yogapose-box__info">
               <h3 class="yogapose-box__title">Lotus Pose (Padmasana)</h3>
@@ -464,7 +464,7 @@
           </div>
           <div class="yogapose-box">
             <div class="yogapose-box__icon">
-              <img src="../images/yogapose/yogapose-2.png" alt="" />
+              <img class="lazyload" data-src="../images/yogapose/yogapose-2.png" alt="" />
             </div>
             <div class="yogapose-box__info">
               <h3 class="yogapose-box__title">Plank Pose (Kumbhakasana)</h3>
@@ -476,7 +476,7 @@
           </div>
           <div class="yogapose-box">
             <div class="yogapose-box__icon">
-              <img src="../images/yogapose/yogapose-3.png" alt="" />
+              <img class="lazyload" data-src="../images/yogapose/yogapose-3.png" alt="" />
             </div>
             <div class="yogapose-box__info">
               <h3 class="yogapose-box__title">
@@ -491,7 +491,7 @@
           </div>
           <div class="yogapose-box">
             <div class="yogapose-box__icon">
-              <img src="../images/yogapose/yogapose-4.png" alt="" />
+              <img class="lazyload" data-src="../images/yogapose/yogapose-4.png" alt="" />
             </div>
             <div class="yogapose-box__info">
               <h3 class="yogapose-box__title">
@@ -506,7 +506,7 @@
           </div>
           <div class="yogapose-box">
             <div class="yogapose-box__icon">
-              <img src="../images/yogapose/yogapose-5.png" alt="" />
+              <img class="lazyload" data-src="../images/yogapose/yogapose-5.png" alt="" />
             </div>
             <div class="yogapose-box__info">
               <h3 class="yogapose-box__title">
@@ -521,7 +521,7 @@
           </div>
           <div class="yogapose-box">
             <div class="yogapose-box__icon">
-              <img src="../images/yogapose/yogapose-6.png" alt="" />
+              <img class="lazyload" data-src="../images/yogapose/yogapose-6.png" alt="" />
             </div>
             <div class="yogapose-box__info">
               <h3 class="yogapose-box__title">
@@ -536,7 +536,7 @@
           </div>
           <div class="yogapose-box">
             <div class="yogapose-box__icon">
-              <img src="../images/yogapose/yogapose-7.png" alt="" />
+              <img class="lazyload" data-src="../images/yogapose/yogapose-7.png" alt="" />
             </div>
             <div class="yogapose-box__info">
               <h3 class="yogapose-box__title">Garland Pose (Malasana)</h3>
@@ -549,7 +549,7 @@
           </div>
           <div class="yogapose-box">
             <div class="yogapose-box__icon">
-              <img src="../images/yogapose/yogapose-8.png" alt="" />
+              <img class="lazyload" data-src="../images/yogapose/yogapose-8.png" alt="" />
             </div>
             <div class="yogapose-box__info">
               <h3 class="yogapose-box__title">
@@ -596,7 +596,7 @@
     <section id="gallery" class="section">
       <div class="content-box">
         <div class="section-header">
-          <img class="section-header__img" src="../images/logo/logo.png" alt="Yogavive Logo" />
+          <img class="section-header__img lazyload" data-src="../images/logo/logo.png" alt="Yogavive Logo" />
           <h2 class="section-header__title">Message</h2>
         </div>
       </div>
@@ -604,40 +604,43 @@
         <div class="gallery-box">
           <a class="glightbox gallery-box__img gallery-box__img--a"
             href="${require(`../images/gallery/gallery-hq-1.jpg`)}">
-            <img src="../images/gallery/gallery-prev-1.jpg" title="RK Orthy Yoga Pose" alt="RK Orthy Yoga Pose" />
+            <img class="lazyload" data-src="../images/gallery/gallery-prev-1.jpg" title="RK Orthy Yoga Pose"
+              alt="RK Orthy Yoga Pose" />
           </a>
 
           <a class="glightbox gallery-box__img gallery-box__img--b"
             href="${require(`../images/gallery/gallery-hq-2.jpg`)}">
-            <img src="../images/gallery/gallery-prev-2.jpg" title="Yogavive Trainning Room"
+            <img class="lazyload" data-src="../images/gallery/gallery-prev-2.jpg" title="Yogavive Trainning Room"
               alt="Yogavive Trainning Room" />
           </a>
           <a class="glightbox gallery-box__img gallery-box__img--c"
             href="${require(`../images/gallery/gallery-hq-3.jpg`)}">
-            <img src="../images/gallery/gallery-prev-3.jpg" title="RK Orthy Trainning" alt="RK Orthy Trainning" />
+            <img class="lazyload" data-src="../images/gallery/gallery-prev-3.jpg" title="RK Orthy Trainning"
+              alt="RK Orthy Trainning" />
           </a>
 
           <a class="glightbox gallery-box__img gallery-box__img--d"
             href="${require(`../images/gallery/gallery-hq-4.jpg`)}">
-            <img src="../images/gallery/gallery-prev-4.jpg" title="RK Orthy Doing Worksop"
+            <img class="lazyload" data-src="../images/gallery/gallery-prev-4.jpg" title="RK Orthy Doing Worksop"
               alt="RK Orthy Doing Worksop" />
           </a>
 
           <a class="glightbox gallery-box__img gallery-box__img--e"
             href="${require(`../images/gallery/gallery-hq-5.jpg`)}">
-            <img src="../images/gallery/gallery-prev-5.jpg" title="Yogavive Birthday Cake"
+            <img class="lazyload" data-src="../images/gallery/gallery-prev-5.jpg" title="Yogavive Birthday Cake"
               alt="Yogavive Birthday Cake" />
           </a>
 
           <a class="glightbox gallery-box__img gallery-box__img--f"
             href="${require(`../images/gallery/gallery-hq-6.jpg`)}">
-            <img src="../images/gallery/gallery-prev-6.jpg" title="RK Orthy Tough Yoga Pose"
+            <img class="lazyload" data-src="../images/gallery/gallery-prev-6.jpg" title="RK Orthy Tough Yoga Pose"
               alt="RK Orthy Tough Yoga Pose" />
           </a>
 
           <a class="glightbox gallery-box__img gallery-box__img--g"
             href="${require(`../images/gallery/gallery-hq-7.jpg`)}">
-            <img src="../images/gallery/gallery-prev-7.jpg" title="Yoga  Pose Circle" alt="Yoga Pose Circle" />
+            <img class="lazyload" data-src="../images/gallery/gallery-prev-7.jpg" title="Yoga  Pose Circle"
+              alt="Yoga Pose Circle" />
           </a>
         </div>
       </div>
@@ -646,7 +649,7 @@
     <section id="testimonials" class="section">
       <div class="content-box">
         <div class="section-header">
-          <img class="section-header__img" src="../images/logo/logo.png" alt="Yogavive Logo" />
+          <img class="section-header__img lazyload" data-src="../images/logo/logo.png" alt="Yogavive Logo" />
           <h2 class="section-header__title">Testimonials</h2>
         </div>
       </div>
@@ -657,7 +660,7 @@
             <div class="testimonial glide__slide">
               <div class="testimonial__gallery">
                 <div class="testimonial__img testimonial__img--before">
-                  <img src="../images/testimonials/before-3.jpg" />
+                  <img class="lazyload" data-src="../images/testimonials/before-3.jpg" />
                 </div>
                 <div class="testimonial__img testimonial__img--divider">
                   <svg>
@@ -665,7 +668,7 @@
                   </svg>
                 </div>
                 <div class="testimonial__img testimonial__img--after">
-                  <img src="../images/testimonials/after-3.jpg" />
+                  <img class="lazyload" data-src="../images/testimonials/after-3.jpg" />
                 </div>
               </div>
               <div class="testimonial__info">
@@ -697,7 +700,7 @@
                   </div>
                 </div>
                 <div class="testimonial__author">
-                  <img src="../images/testimonials/profile-3.png" class="testimonial__author-img" />
+                  <img class="testimonial__author-img lazyload" data-src="../images/testimonials/profile-3.png" />
                   <div class="testimonial__author-info">
                     <h3>Rebecca Bela</h3>
                     <p>School Teacher</p>
@@ -782,7 +785,7 @@
     <section id="contact" class="section">
       <div class="content-box">
         <div class="section-header">
-          <img class="section-header__img" src="../images/logo/logo.png" alt="Yogavive Logo" />
+          <img class="section-header__img lazyload" data-src="../images/logo/logo.png" alt="Yogavive Logo" />
           <h2 class="section-header__title">Contact</h2>
         </div>
 
@@ -839,15 +842,15 @@
         <h3 class="footer-bg__title">Join Today.</h3>
       </div>
       <picture>
-        <source srcset="
+        <source data-srcset="
               ../images/footerbg/footerbg-desktop.png    1440w,
               ../images/footerbg/footerbg-desktop-lg.png 2250w
             " media="(min-width: 1100px)" />
-        <source srcset="
+        <source data-srcset="
               ../images/footerbg/footerbg-tablet.png     900w,
               ../images/footerbg/footerbg-tablet-lg.png 1400w
             " media="(min-width: 520px)" />
-        <img class="footer-bg__img" srcset="
+        <img class="footer-bg__img lazyload" data-srcset="
               ../images/footerbg/footerbg-mobile.png    500w,
               ../images/footerbg/footerbg-mobile-lg.png 780w
             " alt="YogaVive Footer Background Image" />
@@ -857,7 +860,7 @@
       <div class="content-box">
         <div class="footer-top__logo">
           <a href="/">
-            <img src="../images/logo/logo-white.png" alt="Yogavive Logo" />
+            <img class="lazyload" data-src="../images/logo/logo-white.png" alt="Yogavive Logo" />
           </a>
           <h3 class="footer-top__sub">Helps You Revive</h3>
         </div>
