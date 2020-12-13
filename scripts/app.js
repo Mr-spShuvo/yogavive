@@ -18,7 +18,8 @@ const logoWH = require("../images/logo/logo-white.png");
 
 // Mobile Navigation
 const mediaNav = new MediaNav();
-mediaNav.toggleMenu();
+mediaNav.onMenuIconClick();
+mediaNav.onMenuItemClick();
 
 // Navigation on Scroll
 const scrollOnNav = new ScrollOnNav(logo, logoWH);
