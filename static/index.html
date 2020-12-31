@@ -4,7 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <meta name="robots" content="noindex" />
+  <meta name="description"
+    content="Heal your wellness by learning yoga from the country's best and internationally certified yoga teacher.">
+
+  <!-- Twitter Meta Tags -->
+  <meta name=" twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@YogaViveBD">
+  <meta name="twitter:title" content="YogaVive - Helps You Revive">
+  <meta name="twitter:description"
+    content="Heal your wellness by learning yoga from the country's best and internationally certified yoga teacher.">
+  <meta name="twitter:image" content="https://yogavivebd.com/assets/android-chrome-384x384.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:image" content="https://yogavivebd.com/assets/android-chrome-384x384.png" itemprop="thumbnailUrl">
+  <meta property="og:title" content="YogaVive - Helps You Revive">
+  <meta property="og:url" content="https://yogavivebd.com">
+  <meta property="og:site_name" content="YogaVive">
+  <meta property="og:type" content="website" />
+  <meta property="og:description"
+    content="Heal your wellness by learning yoga from the country's best and internationally certified yoga teacher.">
+  <meta property="fb:app_id" content="742849779675552" />
+
   <title>YogaVive - Helps You Revive</title>
+
 </head>
 
 <body class="homepage">
@@ -857,30 +882,31 @@
   </footer>
 
   <!-- Your Chat Plugin code -->
+
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script>
     window.fbAsyncInit = function () {
       FB.init({
         xfbml: true,
-        version: "v8.0",
+        version: 'v9.0'
       });
     };
 
     (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
+      var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
+    }(document, 'script', 'facebook-jssdk'));
   </script>
 
   <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat" attribution="setup_tool" page_id="407387660066578" theme_color="#3dbda9"
-    logged_in_greeting="Hi, There. Need any help?" logged_out_greeting="Hi, There. Need any help?"></div>
+  <div class="fb-customerchat" attribution=setup_tool page_id="291681887856586" theme_color="#3dbda9"
+    logged_in_greeting="Have questions or want learn more about YogaVive? Feel free to message us."
+    logged_out_greeting="Have questions or want learn more about YogaVive? Feel free to message us.">
+  </div>
 </body>
 
 </html>
