@@ -50,8 +50,9 @@
 
     &__title {
       text-transform: uppercase;
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       color: $color-main;
+      font-weight: $font-semi-bold;
     }
 
     &__info {
