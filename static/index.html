@@ -1094,7 +1094,7 @@
             <li><a href="#packages">Packages</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="#" class="not-yet">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="footer-top__social">
@@ -1139,7 +1139,7 @@
     window.fbAsyncInit = function () {
       FB.init({
         xfbml: true,
-        version: 'v9.0'
+        version: 'v9.0',
       });
     };
 
@@ -1154,6 +1154,7 @@
 
   <!-- Your Chat Plugin code -->
   <div class="fb-customerchat" attribution=setup_tool page_id="291681887856586" theme_color="#3dbda9"
+    greeting_dialog_display="fade" greeting_dialog_delay="15000"
     logged_in_greeting="Have questions or want learn more about YogaVive? Feel free to message us."
     logged_out_greeting="Have questions or want learn more about YogaVive? Feel free to message us.">
   </div>
