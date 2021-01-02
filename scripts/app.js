@@ -1,3 +1,8 @@
+// Preloader
+import Preloader from "./modules/Preloader";
+const preloader = new Preloader();
+preloader.hide();
+
 // Import Packages
 import Plyr from "plyr";
 import SimpleLightbox from "simplelightbox/dist/simple-lightbox.modules";
