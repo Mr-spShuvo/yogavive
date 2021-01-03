@@ -5,7 +5,6 @@
   flex-wrap: wrap;
 
   .packages-box {
-    //width: 100%;
     padding: 3rem;
     border: 3px solid $color-light;
     flex-basis: 100%;
@@ -154,6 +153,60 @@
       &__price-now {
         margin-top: -1rem;
       }
+    }
+  }
+}
+
+.packages-terms {
+  width: 80rem;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border: 3px solid $color-gray;
+  background-color: $color-light;
+  padding: 2rem 3.5rem;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 3px solid $color-main;
+    background-color: $color-bg;
+    position: relative;
+    display: none;
+
+    @include media-queries(atMediumLarge) {
+      display: block;
+    }
+
+    span {
+      font-size: 3.6rem;
+      font-weight: $font-bold;
+      color: $color-main;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  ul {
+    margin-left: 5%;
+    list-style: none;
+  }
+
+  &__info {
+    color: $color-sub;
+    &::before {
+      content: "\2794";
+      margin-right: 1rem;
+      color: $color-main;
+    }
+    &--strong {
+      font-weight: $font-semi-bold;
+      color: $color-main;
     }
   }
 }
