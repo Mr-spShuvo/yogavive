@@ -79,17 +79,17 @@
     &__text {
       color: $color-sub;
       font-weight: $font-regular;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin-bottom: 2.6rem;
 
       @include media-queries(atSmall) {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
       @include media-queries(atLarge) {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
       }
       @include media-queries(atLarger) {
-        font-size: 1.8rem;
+        font-size: 1.65rem;
       }
     }
   }
