@@ -33,6 +33,7 @@
         text-align: left;
         margin-left: 10%;
         margin-bottom: 8rem;
+        max-width: 48%;
       }
     }
 
@@ -86,7 +87,7 @@
         font-size: 1.4rem;
       }
       @include media-queries(atLarge) {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
       }
       @include media-queries(atLarger) {
         font-size: 1.65rem;
