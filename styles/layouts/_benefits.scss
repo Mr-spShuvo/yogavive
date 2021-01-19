@@ -1,0 +1,116 @@
+.yoga-benefits {
+  max-width: 95%;
+  margin: 0 auto;
+  text-align: justify;
+
+  @include media-queries(atMedium) {
+    max-width: 85%;
+    text-align: center;
+  }
+
+  @include media-queries(atMediumLarge) {
+    max-width: 82%;
+  }
+
+  @include media-queries(atLarge) {
+    max-width: 72%;
+  }
+
+  &__img {
+    text-align: center;
+    & > img {
+      width: 80%;
+
+      @include media-queries(atMediumLarge) {
+        width: 75%;
+      }
+
+      @include media-queries(atLarge) {
+        width: 70%;
+      }
+    }
+  }
+
+  &__header {
+    text-transform: uppercase;
+    color: $color-main;
+    font-size: 2.4rem;
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include media-queries(atMedium) {
+      font-size: 2.8rem;
+    }
+
+    @include media-queries(atMediumLarge) {
+      font-size: 3.2rem;
+    }
+
+    @include media-queries(atLarge) {
+      font-size: 3.6rem;
+    }
+  }
+
+  &__info {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: $color-dark-gray;
+
+    span {
+      display: block;
+      font-weight: $font-semi-bold;
+      font-size: 1.6rem;
+      color: $color-main;
+      text-align: center;
+    }
+  }
+}
+
+.yogapose {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  margin-bottom: -5rem;
+
+  .yogapose-box {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+    background-color: $color-light;
+
+    @include media-queries(atMedium) {
+      flex-basis: 48%;
+    }
+
+    @include media-queries(atLarge) {
+      flex-basis: 23%;
+    }
+
+    &__icon {
+      background-color: $color-bg;
+      img {
+        padding-top: 3rem;
+        height: 13rem;
+        bottom: 0;
+      }
+    }
+
+    &__info {
+      margin-top: 1rem;
+      padding: 2rem;
+    }
+
+    &__title {
+      color: $color-main;
+      margin-bottom: 1rem;
+    }
+
+    &__details {
+      font-size: 1.2rem;
+      color: $color-dark-gray;
+      text-align: justify;
+    }
+  }
+}
