@@ -55,12 +55,17 @@
     }
   }
 
+  &__address {
+    font-size: 1.3rem;
+  }
+
   &__icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 1.2rem;
     border-radius: 50%;
+    border: 2px solid $color-light;
     background-color: $color-bg;
 
     & > svg {
