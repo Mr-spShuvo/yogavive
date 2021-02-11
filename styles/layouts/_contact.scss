@@ -35,9 +35,7 @@
     max-width: 60%;
   }
 
-  &__phone,
-  &__mail,
-  &__address {
+  &__option {
     margin-top: 2rem;
     display: flex;
     align-items: center;
@@ -53,10 +51,9 @@
     span:first-child {
       margin-right: 1rem;
     }
-  }
-
-  &__address {
-    font-size: 1.3rem;
+    &--address {
+      font-size: 1.3rem;
+    }
   }
 
   &__icon {
