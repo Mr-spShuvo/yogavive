@@ -11,6 +11,7 @@
     justify-content: space-around;
     padding: 10rem 0;
     flex-wrap: wrap;
+    position: relative;
 
     &__gallery {
       display: flex;
@@ -57,19 +58,56 @@
       }
     }
 
-    &__icon {
-      padding-top: 2rem;
-      svg {
-        fill: $color-main;
-        width: 5rem;
-        height: 5rem;
+    &__badge {
+      position: absolute;
+      right: 6.5rem;
+      bottom: 10rem;
+
+      @include media-queries(atMediumLarge) {
+        top: 4.5rem;
+        bottom: unset;
       }
+
+      img {
+        width: 16rem;
+
+        @include media-queries(atMediumLarge) {
+          width: 19rem;
+        }
+      }
+
+      span {
+        position: absolute;
+        color: $color-light;
+        font-weight: $font-semi-bold;
+        text-transform: uppercase;
+        top: 6rem;
+        left: 2.7rem;
+        font-size: 1.6rem;
+
+        @include media-queries(atMediumLarge) {
+          top: 7.2rem;
+          left: 3.6rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__icon > svg {
+      fill: $color-main;
+      width: 5rem;
+      height: 5rem;
     }
 
     &__quotes {
       color: $color-dark-gray;
       padding: 5rem;
+      padding-top: 5rem;
       line-height: 1.8;
+
+      @include media-queries(atMediumLarge) {
+        padding-top: 10rem;
+      }
     }
 
     &__details {
@@ -79,8 +117,7 @@
 
     &__details-box {
       flex-basis: 30%;
-      background-color: $color-white;
-      padding: 1rem 2rem;
+
       h3 {
         font-size: 1.3rem;
         text-transform: uppercase;
@@ -92,10 +129,46 @@
       }
     }
 
+    &__meta {
+      margin-left: 5rem;
+      display: inline-flex;
+      background-color: $color-white;
+      padding: 2rem;
+      padding-right: 5rem;
+
+      &--left {
+        margin-right: 3rem;
+        padding: 2rem;
+        border-radius: 50%;
+        background-color: $color-main;
+        position: relative;
+        display: inline-block;
+        border: 2px solid $color-bg;
+
+        & > svg {
+          @include abs-center;
+          width: 2.2rem;
+          height: 2.2rem;
+          fill: $color-bg;
+        }
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: $color-main;
+      }
+
+      p {
+        font-weight: $font-medium;
+        color: $color-dark-gray;
+      }
+    }
+
     &__author {
       display: flex;
-      margin-right: auto;
-      padding-top: 5rem;
+      justify-self: flex-end;
+      margin-top: 5rem;
       align-items: center;
     }
 
