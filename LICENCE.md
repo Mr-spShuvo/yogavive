@@ -1,4 +1,4 @@
-Copyright (c) 2012-2021 Md. Shahriar Parvez and Rk Orthy
+Copyright (c) 2020-2021 Md. Shahriar Parvez and Rk Orthy
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
